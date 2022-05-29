@@ -1,0 +1,669 @@
+*{
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+@font-face {
+    font-family: "Thrashit";
+    src: url('../fonts/Thrashit.ttf');
+}
+
+.MainPage{
+    background-color: black;
+}
+
+video {
+    width: 100vw;
+
+    height: 100vh;
+
+    position: absolute;
+
+    z-index: -1;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto auto auto;
+    grid-template-areas:"header"
+    "section"
+    "footer";
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 190px auto auto;
+    grid-template-areas:"header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+
+}
+
+section{
+    grid-area: section;
+}
+
+footer{
+    grid-area: footer;
+}
+
+main{
+    grid-area: main;
+}
+
+footer p{
+    padding-bottom: 2%;
+}
+
+footer{
+
+    font-size: small;
+
+    background-color: white;
+
+    padding-top: 6%;
+
+    padding-bottom: 4%;
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.MainHeader{
+    text-align: center;
+}
+
+.SubmitButton{
+    width: 90%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0.5em solid black;
+}
+
+.MainPage a{
+    text-decoration: none; 
+}
+
+.ListMenu li a{
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: small;
+
+    font-weight: bold;
+}
+
+.MainMenu h1 {
+    color: white;
+
+    font-family: "Thrashit";
+
+    font-size: 2.6em;
+
+    text-align: center;
+
+    padding: 3%;
+}
+
+.SecondListMenu li a{
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: small;
+
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.account a{
+
+    color: rgba(255, 255, 255, 0.589);
+
+    text-decoration: none;
+
+    font-size: x-small;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0 1.7% 0;
+}
+
+.SecondAccount a{
+    color: black;
+
+    text-decoration: none;
+
+    font-size: x-small;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0 1.7% 0;
+}
+
+.FeaturedProducts{
+    background-color: white;
+
+    text-align: center;
+
+    align-items: center;
+
+    padding-top: 5%;
+
+    padding-bottom: 5%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: black;
+}
+
+.FeaturedProducts a{
+    color: black;
+
+    font-weight: bold;
+}
+
+.newsletter{
+    padding-bottom: 5%;
+
+    font-weight: bold;
+}
+
+.control{
+    padding: 1.1%;
+}
+
+.button{
+    color: white;
+    background-color: black;
+    padding: 0.7em;
+    border: none;
+    font-size: 90%;
+}
+
+.copyright p{
+    color: rgba(0, 0, 0, 0.623);
+
+    font-size: x-small;
+
+    padding-top: 3%;
+}
+
+.copyright a{
+    color: rgba(0, 0, 0, 0.623);
+
+    text-decoration: none;
+}
+
+h1{
+    color: black;
+}
+
+header a{
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.SecondMenu h1{
+
+    font-family: "Thrashit";
+
+    font-size: 2.6em;
+
+    padding-bottom: 3%;
+}
+
+.SecondHeader{
+    position: fixed;
+
+    width: 100%;
+
+    text-align: center;
+
+    top: 1.5%;
+
+    align-items: center;
+}
+
+.ProductsPage{
+    column-count: 1;
+
+    padding: 0;
+
+    align-items: center;
+}
+
+.TitlePages{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 0.8em;
+
+    padding-bottom: 5%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center{
+    align-items: center;
+
+    text-align: center;
+}
+
+.CreateAccount{
+    text-align: center;
+
+    padding: 4%;
+}
+
+.login{
+    text-align: center;
+
+    padding: 4%;
+}
+
+.contact{
+    text-align: center;
+
+    padding: 4%;
+}
+
+main{
+    text-align: center;
+
+    padding: 5%;
+}
+
+.ComoComprar{
+    padding: 0 2% 0 2%;
+
+    line-height: 1.5rem;
+
+    text-align: left;
+}
+
+.field{
+    width: 90%;
+    padding: 1.5%;
+}
+
+.ContactForm{
+    padding: 0;
+}
+
+.message{
+    resize: none;
+    padding: 6%;
+    width: 90%;
+}
+
+@media screen and (min-width: 720px) {
+    body{
+        position: relative;
+    }
+    
+    @font-face {
+        font-family: "Thrashit";
+        src: url('../fonts/Thrashit.ttf');
+    }
+    
+    .MainPage{
+        background-color: black;
+    }
+    
+    video {
+        width: 100vw;
+    
+        height: 100vh;
+    
+        position: absolute;
+    }
+
+    .grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto auto;
+    grid-template-areas: "header"
+    "section"
+    "footer";
+    box-sizing: border-box;
+    }
+
+    .grid2{
+    display: grid;
+    grid-template-columns: 28% auto;
+    grid-template-rows: 100vh auto auto;
+    grid-template-areas: "header main"
+    "header main"
+    "footer footer";
+    box-sizing: border-box;
+    }
+
+    header{
+        grid-area: header;
+    
+    }
+    
+    section{
+        grid-area: section;
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+    
+    main{
+        grid-area: main;
+    }
+    
+    .MainHeader{
+    
+        position: relative;
+    
+        flex-direction: column;
+
+        top: 2.8%;
+
+        right: 38%;
+    }
+    
+    .MainMenu h1 {
+        color: white;
+    
+        font-family: "Thrashit";
+    
+        font-size: 3.5em; 
+    }
+    
+    .MainPage a{
+        text-decoration: none; 
+    }
+    
+    .ListMenu li a{
+        color: white;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    
+        font-size: small;
+    
+        font-weight: bold;
+    }
+    
+    .ListMenu li :hover{
+        color: rgba(255, 255, 255, 0.664);
+    
+        transition: 250ms;
+    }
+    
+    .ListMenu li{
+        padding-bottom: 1.7%;
+    }
+    
+    .SecondListMenu li a{
+        color: black;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    
+        font-size: small;
+    
+        font-weight: bold;
+    }
+    
+    .SecondListMenu li :hover{
+        color: rgba(0, 0, 0, 0.473);
+    
+        transition: 250ms;
+    }
+    
+    .SecondListMenu li{
+        padding: 5% 0 5% 0;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .account a{
+    
+        color: rgba(255, 255, 255, 0.589);
+    
+        text-decoration: none;
+    
+        font-size: x-small;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    
+        position: relative;
+    
+        display: inline-block;
+    
+        padding: 0 0.7% 0;
+    }
+    
+    .account :hover{
+        color: white;
+    
+        transition: 250ms;
+    }
+    
+    .SecondAccount a{
+        color: black;
+    
+        text-decoration: none;
+    
+        font-size: x-small;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    
+        padding: 0 3% 0;
+    }
+
+    .SecondAccount{
+        padding-top: 3%;
+    }
+    
+    .SecondAccount :hover{
+        color: rgba(128, 128, 128, 0.884);
+    
+        transition: 250ms;
+    }
+    
+    .FeaturedProducts{
+        background-color: white;
+    
+        text-align: center;
+    
+        align-items: center;
+    
+        padding-top: 2%;
+    
+        padding-bottom: 2%;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    
+        color: black;
+    }
+    
+    .FeaturedProducts a{
+        color: black;
+    
+        font-weight: bold;
+    }
+    
+    footer{
+    
+        font-size: 0.9em;
+    
+        background-color: white;
+    
+        padding-top: 0;
+    
+        padding-bottom: 1%;
+    
+        text-align: center;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .newsletter{
+        padding-bottom: 2%;
+    }
+    
+    .control{
+        padding: 8px;
+    }
+    
+    .button{
+        color: white;
+        background-color: black;
+        padding: 0.4%;
+        border: 0.2em solid black;
+        font-size: small;
+    }
+
+    .copyright p{
+        color: rgba(0, 0, 0, 0.623);
+    
+        font-size: x-small;
+
+        padding-top: 1.5%;
+    }
+    
+    .copyright a{
+        color: rgba(0, 0, 0, 0.623);
+    
+        text-decoration: none;
+    }
+    
+    h1{
+        color: black;
+    }
+    
+    header a{
+        text-decoration: none;
+    
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .SecondMenu h1{
+        font-family: "Thrashit";
+    
+        font-size: 3.6em;
+
+        padding-bottom: 10%;
+
+    }
+    
+    .SecondHeader{
+        top: 8.6%;
+
+        left: 3.2%;
+    
+        position: fixed;
+
+        width: auto;
+    }
+    
+    .ProductsPage{
+        column-count: 2;
+    
+        align-items: center;
+    }
+    
+    .TitlePages{
+        font-family: Arial, Helvetica, sans-serif;
+    
+        font-size: 0.8em;
+    }
+    
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .center{
+        align-items: center;
+    
+        text-align: center;
+    }
+    
+    .CreateAccount{
+        text-align: center;
+    }
+    
+    .login{
+        text-align: center;
+    }
+    
+    .contact{
+        text-align: center;
+    
+        padding-top: 0;
+    }
+    
+    main{
+        text-align: center;
+
+        padding: 7% 5% 5% 5%;
+    }
+    
+    .ComoComprar{
+        line-height: 2em;
+    
+        text-align: left;
+
+        padding: 0;
+    }
+    
+    .field{
+        width: 90%;
+        padding: 0.7em;
+    }
+    
+    .SubmitButton{
+        width: 90%;
+        padding: 0.5em;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .message{
+        resize: none;
+        padding: 2em;
+        width: 90%;
+    }
+    
+    .TitlePages{
+        padding-bottom: 1%;
+    }
+
+    .proyectos img{
+    height: 500px;
+    width: 500px;
+    }
+}
+
