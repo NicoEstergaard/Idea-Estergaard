@@ -665,5 +665,51 @@ main{
     height: 500px;
     width: 500px;
     }
+
+    .gradiente{
+        padding: 20px;
+
+        background-color: black;
+
+        color: white;
+
+        background-image: radial-gradient(black, white);
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .gradiente :hover{
+        padding: 80px;
+
+        background-color: black;
+
+        color: white;
+
+        background-image: radial-gradient(black, white);
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        transition: all 300ms;
+    }
+
+    .gradiente h1{
+        color: white;
+    }
+
+    .fadein img{
+        animation-delay: 150ms;
+    }
+
+    .texto p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        font-weight: bold;
+        font-size: medium;
+        width: 100%;
+        animation-delay: 2s;
+    }
+
 }
 
