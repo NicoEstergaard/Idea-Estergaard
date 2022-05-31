@@ -41,7 +41,7 @@ video {
 .grid2{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 190px auto auto;
+    grid-template-rows: 220px auto auto;
     grid-template-areas:"header"
     "main"
     "footer";
@@ -320,7 +320,7 @@ main{
     width: 90%;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 890px) {
     body{
         position: relative;
     }
