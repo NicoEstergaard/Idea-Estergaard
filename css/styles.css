@@ -41,7 +41,16 @@ video {
 .grid2{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 220px auto auto;
+    grid-template-rows: 280px auto auto;
+    grid-template-areas:"header"
+    "main"
+    "footer";
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 280px auto auto;
     grid-template-areas:"header"
     "main"
     "footer";
@@ -135,6 +144,10 @@ ul {
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .account a{
 
     color: rgba(255, 255, 255, 0.589);
@@ -180,6 +193,7 @@ ul {
     color: black;
 
     font-weight: bold;
+
 }
 
 .newsletter{
@@ -367,6 +381,19 @@ main{
     padding-top: 3%;
 }
 
+.precio{
+    padding-top: 1%;
+    font-size: 0.9em;
+}
+
+.titulo{
+    font-size: 0.9em;
+}
+
+.item{
+    color: black;
+}
+
 @media screen and (min-width: 890px) {
     body{
         position: relative;
@@ -407,6 +434,15 @@ main{
     "header main"
     "footer footer";
     box-sizing: border-box;
+    }
+
+    .grid3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px auto auto;
+        grid-template-areas:"header"
+        "main"
+        "footer";
     }
 
     header{
@@ -761,4 +797,3 @@ main{
         animation-delay: 2s;
     }
 }
-

@@ -15,50 +15,13 @@
 
 <body class="MainPage">
 
-    <video src="media/c chaos render animation hq 2 0000-0300.mp4" autoplay loop></video>
+    <video src="./media/c chaos render animation hq 2 0000-0300.mp4" autoplay loop></video>
 
     <div class="grid">
 
         <header class="MainHeader">
 
             <div class="MainMenu">
-
-<!--                 <nav>
-                    <div class="navbar">
-                        <div class="container nav-container">
-                            <input class="checkbox" type="checkbox" name="" id="" />
-                            <div class="hamburger-lines">
-                                <span class="line line1"></span>
-                                <span class="line line2"></span>
-                                <span class="line line3"></span>
-                            </div>
-                            <div class="logo">
-                                <h1 class="animate__animated animate__fadeIn">CAOS LABORATORIO</h1>
-                            </div>
-                            <div class="menu-items">
-                                <ul class="ListMenu">
-                                    <li><a href="pages/nombre-de-la-coleccion.html">"NOMBRE DE LA COLECCION"</a></li>
-                                    <li><a href="pages/productos.html">PRODUCTOS</a></li>
-                                    <li><a href="pages/proyectos.html">PROYECTOS*</a> </li>
-                                    <li><a href="pages/giftcards.html">GIFTCARDS</a></li>
-                                    <li><a href="pages/contacto.html">CONTACTO</a></li>
-                                    <li><a href="pages/como-comprar.html">COMO COMPRAR</a></li>
-                                    <li><a href="pages/an-tr-gr.html">AN-TR-GR</a></li>
-                                </ul>
-
-                                <div class="account">
-
-                                    <a href="pages/iniciar-sesion.html">INICIAR SESION</a>
-                    
-                                    <a href="pages/crear-cuenta.html">CREAR CUENTA</a>
-                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-
-                ------------------------------------------------------- -->
 
                 <a href="index.html">
                     <h1 class="animate__animated animate__fadeIn">CAOS LABORATORIO
@@ -76,6 +39,7 @@
                         <li><a href="pages/contacto.html">CONTACTO</a></li>
                         <li><a href="pages/como-comprar.html">COMO COMPRAR</a></li>
                         <li><a href="pages/an-tr-gr.html">AN-TR-GR</a></li>
+                        <li><a href="pages/bootstrap-testing.html">BT-TESTING</a></li>
                     </ul>
 
                 </nav>
@@ -92,11 +56,54 @@
 
         </header>
 
+        <section alertsign>
+            <div class="alert alert-dark alert-dismissible fade show col-xs-1 col-sm-1 col-md-1 col-lg-2 col-xl-2 col-xxl-2"
+                role="alert">
+                コンプレックス システム*
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </section>
+
         <section>
 
             <div class="FeaturedProducts">
 
-                <h4>PRODUCTOS DESTACADOS*</h4>
+                <h6 class="fw-bold">PRODUCTOS DESTACADOS*</h6>
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner row justify-content-center ">
+                        <div class="carousel-item active ">
+                            <a href="#"><img src="img/1.jpg" class="d-block" alt="..." height="400px" width="400px"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/bag.png" class="d-block " alt="..." height="400px"
+                                    width="400px"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#"><img src="img/14.jpg" class="d-block " alt="..." height="400px"
+                                    width="400px"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="img/jeans.png" class="d-block" alt="..." height="400px" width="400px">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <a href="pages/productos.html">VER TODO</a>
+
+                <!-- <h6 class="fw-bold">PRODUCTOS DESTACADOS*</h6>
 
                 <div>
                     <a href="pages/remera.html"><img src="img/1.jpg" alt="" height="400px"></a>
@@ -105,7 +112,7 @@
                     <a href=""><img src="img/jeans.png" alt="" height="400px"></a>
                 </div>
 
-                <a href="pages/productos.html">VER TODO</a>
+                <a href="pages/productos.html">VER TODO</a> -->
 
             </div>
 
@@ -126,7 +133,9 @@
 
                     <input class="control" type="email" name="email" id="email" placeholder="Email">
 
-                    <input class="button" type="submit" value="SUSCRIBIRSE">
+                    <!-- <input class="button" type="submit" value="SUSCRIBIRSE"> -->
+
+                    <button type="button" class="btn btn-dark">SUSCRIBIRSE</button>
 
                 </form>
 
