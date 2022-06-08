@@ -10,10 +10,10 @@ body{
     position: relative;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Thrashit";
     src: url('../fonts/Thrashit.ttf');
-}
+} */
 
 .MainPage{
     background-color: black;
@@ -41,16 +41,7 @@ video {
 .grid2{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 280px auto auto;
-    grid-template-areas:"header"
-    "main"
-    "footer";
-}
-
-.grid3{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 280px auto auto;
+    grid-template-rows: 100px auto auto;
     grid-template-areas:"header"
     "main"
     "footer";
@@ -58,7 +49,6 @@ video {
 
 header{
     grid-area: header;
-
 }
 
 section{
@@ -78,7 +68,6 @@ footer p{
 }
 
 footer{
-
     font-size: small;
 
     background-color: white;
@@ -118,16 +107,24 @@ footer{
     font-weight: bold;
 }
 
+.ListMenu li{
+    display: inline;
+
+    padding: 0 1% 0 1%;
+}
+
 .MainMenu h1 {
     color: white;
 
-    font-family: "Thrashit";
+    font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 2.6em;
+    font-size: 1.7em;
 
     text-align: center;
 
     padding: 3%;
+
+    font-weight: bold;
 }
 
 .SecondListMenu li a{
@@ -138,6 +135,12 @@ footer{
     font-size: small;
 
     font-weight: bold;
+}
+
+.SecondListMenu li{
+    display: inline;
+
+    padding: 0 1% 0 1%;
 }
 
 ul {
@@ -217,34 +220,31 @@ a{
 .copyright p{
     color: rgba(0, 0, 0, 0.623);
 
-    font-size: x-small;
-
     padding-top: 3%;
+
+    font-size: 0.9em;
 }
 
 .copyright a{
-    color: rgba(0, 0, 0, 0.623);
+    color: rgba(0, 0, 0, 0.63);
 
     text-decoration: none;
+
+    font-weight: bold;
 }
 
 h1{
     color: black;
 }
 
-header a{
-    text-decoration: none;
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .SecondMenu h1{
+    font-family: Arial, Helvetica, sans-serif;
 
-    font-family: "Thrashit";
-
-    font-size: 2.6em;
+    font-size: 1.7em;
 
     padding-bottom: 3%;
+
+    font-weight: bold;
 }
 
 .SecondHeader{
@@ -332,7 +332,7 @@ main{
     width: 90%;
 }
 
-.gradiente{
+/* .gradiente{
     padding: 20px;
 
     background-color: black;
@@ -350,7 +350,7 @@ main{
 
 .fadein img{
     animation-delay: 150ms;
-}
+} */
 
 .texto p{
     font-family: Arial, Helvetica, sans-serif;
@@ -399,11 +399,6 @@ main{
         position: relative;
     }
     
-    @font-face {
-        font-family: "Thrashit";
-        src: url('../fonts/Thrashit.ttf');
-    }
-    
     .MainPage{
         background-color: black;
     }
@@ -428,7 +423,7 @@ main{
 
     .grid2{
     display: grid;
-    grid-template-columns: 28% auto;
+    grid-template-columns: 24% auto;
     grid-template-rows: 100vh auto auto;
     grid-template-areas: "header main"
     "header main"
@@ -470,15 +465,17 @@ main{
 
         top: 2.8%;
 
-        right: 38%;
+        right: 37%;
     }
     
     .MainMenu h1 {
         color: white;
     
-        font-family: "Thrashit";
+        font-family: Arial, Helvetica, sans-serif;
     
-        font-size: 3.5em; 
+        font-size: 2em; 
+
+        font-weight: bold;
     }
     
     .MainPage a{
@@ -502,7 +499,9 @@ main{
     }
     
     .ListMenu li{
-        padding-bottom: 1.7%;
+        padding-bottom: 2%;
+
+        display: list-item;
     }
     
     .SecondListMenu li a{
@@ -523,6 +522,8 @@ main{
     
     .SecondListMenu li{
         padding: 5% 0 5% 0;
+
+        display: list-item;
     }
     
     ul {
@@ -609,10 +610,6 @@ main{
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    footer p{
-        padding-bottom: 0;
-    }
-    
     .newsletter{
         padding-top: 1%;
         padding-bottom: 1%;
@@ -630,12 +627,18 @@ main{
         font-size: small;
     }
 
+    footer p{
+        padding: 0;
+    }
+
     .copyright p{
         color: rgba(0, 0, 0, 0.623);
     
-        font-size: x-small;
+        font-size: 0.8em;
 
-        padding-top: 1.5%;
+        padding-top: 0;
+
+        padding-bottom: 1%;
     }
     
     .copyright a{
@@ -648,19 +651,14 @@ main{
         color: black;
     }
     
-    header a{
-        text-decoration: none;
-    
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
     .SecondMenu h1{
-        font-family: "Thrashit";
+        font-family: Arial, Helvetica, sans-serif;
     
-        font-size: 3.6em;
+        font-size: 2em;
 
         padding-bottom: 10%;
 
+        font-weight: bold;
     }
     
     .SecondHeader{
@@ -674,15 +672,15 @@ main{
     }
     
     .ProductsPage{
-        column-count: 2;
+        column-count: 3;
     
         align-items: center;
     }
     
     .TitlePages{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
     
-        font-size: 0.8em;
+        font-size: 1em;
     }
     
     p{
@@ -712,7 +710,7 @@ main{
     main{
         text-align: center;
 
-        padding: 7% 5% 5% 5%;
+        padding: 5.8% 5% 5% 5%;
     }
     
     .ComoComprar{
@@ -795,5 +793,9 @@ main{
         font-size: medium;
         width: 100%;
         animation-delay: 2s;
+    }
+
+    .instagram{
+        padding: 1.2%;
     }
 }
