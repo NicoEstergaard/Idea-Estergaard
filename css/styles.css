@@ -1,801 +1,380 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-    padding: 0;
+body {
+  position: relative; }
 
-    box-sizing: border-box;
-}
-
-body{
-    position: relative;
-}
-
-/* @font-face {
-    font-family: "Thrashit";
-    src: url('../fonts/Thrashit.ttf');
-} */
-
-.MainPage{
-    background-color: black;
-}
+.MainPage {
+  background-color: black; }
 
 video {
-    width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1; }
 
-    height: 100vh;
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100vh auto auto auto;
+  grid-template-areas: "header" "section" "footer"; }
 
-    position: absolute;
+.grid2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px auto auto;
+  grid-template-areas: "header" "main" "footer"; }
 
-    z-index: -1;
-}
+header {
+  grid-area: header; }
 
-.grid{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100vh auto auto auto;
-    grid-template-areas:"header"
-    "section"
-    "footer";
-}
+section {
+  grid-area: section; }
 
-.grid2{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px auto auto;
-    grid-template-areas:"header"
-    "main"
-    "footer";
-}
+footer {
+  grid-area: footer; }
 
-header{
-    grid-area: header;
-}
+main {
+  grid-area: main; }
 
-section{
-    grid-area: section;
-}
-
-footer{
-    grid-area: footer;
-}
-
-main{
-    grid-area: main;
-}
-
-footer p{
-    padding-bottom: 2%;
-}
-
-footer{
-    font-size: small;
-
-    background-color: white;
-
-    padding-top: 6%;
-
-    text-align: center;
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.MainHeader{
-    text-align: center;
-}
-
-.SubmitButton{
-    width: 90%;
-    padding: 1%;
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    border: 0.5em solid black;
-}
-
-.MainPage a{
-    text-decoration: none; 
-}
-
-.ListMenu li a{
-    color: white;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: small;
-
-    font-weight: bold;
-}
-
-.ListMenu li{
-    display: inline;
-
-    padding: 0 1% 0 1%;
-}
-
-.MainMenu h1 {
-    color: white;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 1.7em;
-
-    text-align: center;
-
-    padding: 3%;
-
-    font-weight: bold;
-}
-
-.SecondListMenu li a{
-    color: black;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: small;
-
-    font-weight: bold;
-}
-
-.SecondListMenu li{
-    display: inline;
-
-    padding: 0 1% 0 1%;
-}
+p {
+  font-family: Arial, Helvetica, sans-serif; }
 
 ul {
-    list-style-type: none;
-}
+  list-style-type: none; }
 
-a{
-    text-decoration: none;
-}
+a {
+  text-decoration: none; }
 
-.account a{
+h1 {
+  color: black; }
 
-    color: rgba(255, 255, 255, 0.589);
-
-    text-decoration: none;
-
-    font-size: x-small;
-
+.MainHeader {
+  text-align: center; }
+  .MainHeader .MainMenu a h1 {
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-
-    padding: 0 1.7% 0;
-}
-
-.SecondAccount a{
-    color: black;
-
-    text-decoration: none;
-
-    font-size: x-small;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    padding: 0 1.7% 0;
-}
-
-.FeaturedProducts{
-    background-color: white;
-
+    font-size: 1.7em;
     text-align: center;
-
-    align-items: center;
-
-    padding-top: 5%;
-
-    padding-bottom: 5%;
-
+    padding: 3%;
+    font-weight: bold; }
+  .MainHeader .MainMenu nav .ListMenu li {
+    display: inline;
+    padding: 0 1% 0 1%; }
+    .MainHeader .MainMenu nav .ListMenu li a {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      font-weight: bold; }
+  .MainHeader .account a {
+    color: rgba(255, 255, 255, 0.589);
+    text-decoration: none;
+    font-size: x-small;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1.7% 0; }
 
+.SecondHeader {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 1.5%;
+  align-items: center; }
+  .SecondHeader .SecondMenu a h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    padding-bottom: 3%;
+    font-weight: bold; }
+  .SecondHeader .SecondMenu nav .SecondListMenu li {
+    display: inline;
+    padding: 0 1% 0 1%; }
+    .SecondHeader .SecondMenu nav .SecondListMenu li a {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      font-weight: bold; }
+  .SecondHeader .SecondAccount a {
     color: black;
-}
+    text-decoration: none;
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1.7% 0; }
 
-.FeaturedProducts a{
-    color: black;
-
-    font-weight: bold;
-
-}
-
-.newsletter{
+footer {
+  font-size: small;
+  background-color: white;
+  padding-top: 6%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
+  footer .newsletter {
     padding-top: 3%;
     padding-bottom: 4%;
-    font-weight: bold;
-}
-
-.control{
-    padding: 1.1%;
-}
-
-.button{
-    color: white;
-    background-color: black;
-    padding: 0.7em;
-    border: none;
-    font-size: 90%;
-}
-
-.copyright p{
+    font-weight: bold; }
+    footer .newsletter .control {
+      padding: 1.1%; }
+    footer .newsletter .button {
+      color: white;
+      background-color: black;
+      padding: 0.7em;
+      border: none;
+      font-size: 90%; }
+  footer .copyright span p {
     color: rgba(0, 0, 0, 0.623);
-
     padding-top: 3%;
+    font-size: 0.9em; }
+    footer .copyright span p a {
+      color: rgba(0, 0, 0, 0.63);
+      text-decoration: none;
+      font-weight: bold; }
+  footer div p {
+    padding-bottom: 3%; }
 
-    font-size: 0.9em;
-}
-
-.copyright a{
-    color: rgba(0, 0, 0, 0.63);
-
-    text-decoration: none;
-
-    font-weight: bold;
-}
-
-h1{
+.FeaturedProducts {
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black; }
+  .FeaturedProducts a {
     color: black;
-}
+    font-weight: bold; }
 
-.SecondMenu h1{
-    font-family: Arial, Helvetica, sans-serif;
+.contact {
+  text-align: center;
+  padding: 4%; }
+  .contact .ContactForm {
+    padding: 0; }
+    .contact .ContactForm div .message {
+      resize: none;
+      padding: 6%;
+      width: 90%; }
 
-    font-size: 1.7em;
+article .item {
+  color: black; }
+  article .item .titulo {
+    font-size: 0.9em; }
 
-    padding-bottom: 3%;
+article .precio {
+  padding-top: 1%;
+  font-size: 0.9em; }
 
-    font-weight: bold;
-}
+main {
+  text-align: center;
+  padding: 5%; }
+  main .content {
+    padding-top: 3%; }
 
-.SecondHeader{
-    position: fixed;
+.ProductsPage {
+  column-count: 1;
+  padding: 0;
+  align-items: center; }
 
-    width: 100%;
+.TitlePages {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding-bottom: 5%; }
 
-    text-align: center;
+.CreateAccount {
+  text-align: center;
+  padding: 4%; }
 
-    top: 1.5%;
+.login {
+  text-align: center;
+  padding: 4%; }
 
-    align-items: center;
-}
+.ComoComprar {
+  padding: 0 2% 0 2%;
+  line-height: 1.5rem;
+  text-align: left; }
 
-.ProductsPage{
-    column-count: 1;
+.field {
+  width: 90%;
+  padding: 1.5%; }
 
-    padding: 0;
+.SubmitButton {
+  width: 90%;
+  padding: 1%;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border: 0.5em solid black; }
 
-    align-items: center;
-}
+.slidetop {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.7em; }
 
-.TitlePages{
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 0.8em;
-
-    padding-bottom: 5%;
-}
-
-p{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.center{
-    align-items: center;
-
-    text-align: center;
-}
-
-.CreateAccount{
-    text-align: center;
-
-    padding: 4%;
-}
-
-.login{
-    text-align: center;
-
-    padding: 4%;
-}
-
-.contact{
-    text-align: center;
-
-    padding: 4%;
-}
-
-main{
-    text-align: center;
-
-    padding: 5%;
-}
-
-.ComoComprar{
-    padding: 0 2% 0 2%;
-
-    line-height: 1.5rem;
-
-    text-align: left;
-}
-
-.field{
-    width: 90%;
-    padding: 1.5%;
-}
-
-.ContactForm{
-    padding: 0;
-}
-
-.message{
-    resize: none;
-    padding: 6%;
-    width: 90%;
-}
-
-/* .gradiente{
-    padding: 20px;
-
-    background-color: black;
-
-    color: white;
-
-    background-image: radial-gradient(black, white);
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.gradiente h1{
-    color: white;
-}
-
-.fadein img{
-    animation-delay: 150ms;
-} */
-
-.texto p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: black;
-    padding: 10px;
-    font-weight: bold;
-    font-size: medium;
-    width: 100%;
-    animation-delay: 2s;
-}
-
-.slidetop{
-    background-color: black;
-
-    color: white;
-
-    padding: 8px;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-weight: bold;
-
-    font-size: 0.7em;
-}
-
-.content{
-    padding-top: 3%;
-}
-
-.precio{
-    padding-top: 1%;
-    font-size: 0.9em;
-}
-
-.titulo{
-    font-size: 0.9em;
-}
-
-.item{
-    color: black;
-}
-
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 890px) {
-    body{
-        position: relative;
-    }
-    
-    .MainPage{
-        background-color: black;
-    }
-    
-    video {
-        width: 100vw;
-    
-        height: 100vh;
-    
-        position: absolute;
-    }
-
-    .grid{
+  .grid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100vh auto auto;
-    grid-template-areas: "header"
-    "section"
-    "footer";
-    box-sizing: border-box;
-    }
-
-    .grid2{
+    grid-template-areas: "header" "section" "footer";
+    box-sizing: border-box; }
+  .grid2 {
     display: grid;
     grid-template-columns: 24% auto;
     grid-template-rows: 100vh auto auto;
-    grid-template-areas: "header main"
-    "header main"
-    "footer footer";
-    box-sizing: border-box;
-    }
-
-    .grid3{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 120px auto auto;
-        grid-template-areas:"header"
-        "main"
-        "footer";
-    }
-
-    header{
-        grid-area: header;
-    
-    }
-    
-    section{
-        grid-area: section;
-    }
-    
-    footer{
-        grid-area: footer;
-    }
-    
-    main{
-        grid-area: main;
-    }
-    
-    .MainHeader{
-    
-        position: relative;
-    
-        flex-direction: column;
-
-        top: 2.8%;
-
-        right: 37%;
-    }
-    
-    .MainMenu h1 {
+    grid-template-areas: "header main" "header main" "footer footer";
+    box-sizing: border-box; }
+  header {
+    grid-area: header; }
+  section {
+    grid-area: section; }
+  footer {
+    grid-area: footer; }
+  main {
+    grid-area: main; }
+  .MainHeader {
+    position: relative;
+    flex-direction: column;
+    top: 2.8%;
+    right: 37%; }
+    .MainHeader .MainMenu a h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      font-weight: bold; }
+    .MainHeader .MainMenu nav .ListMenu li {
+      padding-bottom: 2%;
+      display: list-item; }
+      .MainHeader .MainMenu nav .ListMenu li a {
         color: white;
-    
         font-family: Arial, Helvetica, sans-serif;
-    
-        font-size: 2em; 
-
-        font-weight: bold;
-    }
-    
-    .MainPage a{
-        text-decoration: none; 
-    }
-    
-    .ListMenu li a{
-        color: white;
-    
-        font-family: Arial, Helvetica, sans-serif;
-    
         font-size: small;
-    
-        font-weight: bold;
-    }
-    
-    .ListMenu li :hover{
-        color: rgba(255, 255, 255, 0.664);
-    
-        transition: 250ms;
-    }
-    
-    .ListMenu li{
-        padding-bottom: 2%;
-
-        display: list-item;
-    }
-    
-    .SecondListMenu li a{
-        color: black;
-    
-        font-family: Arial, Helvetica, sans-serif;
-    
-        font-size: small;
-    
-        font-weight: bold;
-    }
-    
-    .SecondListMenu li :hover{
-        color: rgba(0, 0, 0, 0.473);
-    
-        transition: 250ms;
-    }
-    
-    .SecondListMenu li{
-        padding: 5% 0 5% 0;
-
-        display: list-item;
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-    
-    .account a{
-    
-        color: rgba(255, 255, 255, 0.589);
-    
-        text-decoration: none;
-    
-        font-size: x-small;
-    
-        font-family: Arial, Helvetica, sans-serif;
-    
-        position: relative;
-    
-        display: inline-block;
-    
-        padding: 0 0.7% 0;
-    }
-    
-    .account :hover{
+        font-weight: bold; }
+        .MainHeader .MainMenu nav .ListMenu li a:hover {
+          color: rgba(255, 255, 255, 0.664);
+          transition: 250ms; }
+    .MainHeader .account a {
+      color: rgba(255, 255, 255, 0.589);
+      text-decoration: none;
+      font-size: x-small;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      display: inline-block;
+      padding: 0 0.7% 0; }
+      .MainHeader .account a:hover {
         color: white;
-    
-        transition: 250ms;
-    }
-    
-    .SecondAccount a{
+        transition: 250ms; }
+  .SecondHeader {
+    top: 8.6%;
+    left: 3.2%;
+    position: fixed;
+    width: auto; }
+    .SecondHeader .SecondMenu a h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2em;
+      padding-bottom: 10%;
+      font-weight: bold; }
+    .SecondHeader .SecondMenu nav .SecondListMenu li {
+      padding: 5% 0 5% 0;
+      display: list-item; }
+      .SecondHeader .SecondMenu nav .SecondListMenu li a {
         color: black;
-    
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-weight: bold; }
+        .SecondHeader .SecondMenu nav .SecondListMenu li a:hover {
+          color: rgba(0, 0, 0, 0.473);
+          transition: 250ms; }
+    .SecondHeader .SecondAccount {
+      padding-top: 3%; }
+      .SecondHeader .SecondAccount a {
+        color: black;
         text-decoration: none;
-    
         font-size: x-small;
-    
         font-family: Arial, Helvetica, sans-serif;
-    
-        padding: 0 3% 0;
-    }
-
-    .SecondAccount{
-        padding-top: 3%;
-    }
-    
-    .SecondAccount :hover{
-        color: rgba(128, 128, 128, 0.884);
-    
-        transition: 250ms;
-    }
-    
-    .FeaturedProducts{
-        background-color: white;
-    
-        text-align: center;
-    
-        align-items: center;
-    
-        padding-top: 2%;
-    
-        padding-bottom: 2%;
-    
-        font-family: Arial, Helvetica, sans-serif;
-    
-        color: black;
-    }
-    
-    .FeaturedProducts a{
-        color: black;
-    
-        font-weight: bold;
-    }
-    
-    footer{
-    
-        font-size: 0.9em;
-    
-        background-color: white;
-    
-        padding-top: 0;
-    
-        text-align: center;
-    
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .newsletter{
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    
-    .control{
-        padding: 8px;
-    }
-    
-    .button{
+        padding: 0 3% 0; }
+        .SecondHeader .SecondAccount a:hover {
+          color: rgba(128, 128, 128, 0.884);
+          transition: 250ms; }
+  footer {
+    font-size: 0.9em;
+    background-color: white;
+    padding-top: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; }
+    footer .newsletter {
+      padding-top: 1%;
+      padding-bottom: 1%; }
+      footer .newsletter .control {
+        padding: 8px; }
+      footer .newsletter .button {
         color: white;
         background-color: black;
         padding: 0.4%;
         border: 0.2em solid black;
-        font-size: small;
-    }
-
-    footer p{
-        padding: 0;
-    }
-
-    .copyright p{
+        font-size: small; }
+    footer .copyright span p {
+      color: rgba(0, 0, 0, 0.623);
+      font-size: 0.8em;
+      padding-top: 0;
+      padding-bottom: 1%; }
+      footer .copyright span p a {
         color: rgba(0, 0, 0, 0.623);
-    
-        font-size: 0.8em;
-
-        padding-top: 0;
-
-        padding-bottom: 1%;
-    }
-    
-    .copyright a{
-        color: rgba(0, 0, 0, 0.623);
-    
         text-decoration: none;
-    }
-    
-    h1{
-        color: black;
-    }
-    
-    .SecondMenu h1{
-        font-family: Arial, Helvetica, sans-serif;
-    
-        font-size: 2em;
-
-        padding-bottom: 10%;
-
-        font-weight: bold;
-    }
-    
-    .SecondHeader{
-        top: 8.6%;
-
-        left: 3.2%;
-    
-        position: fixed;
-
-        width: auto;
-    }
-    
-    .ProductsPage{
-        column-count: 3;
-    
-        align-items: center;
-    }
-    
-    .TitlePages{
-        font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
-    
-        font-size: 1em;
-    }
-    
-    p{
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .center{
-        align-items: center;
-    
-        text-align: center;
-    }
-    
-    .CreateAccount{
-        text-align: center;
-    }
-    
-    .login{
-        text-align: center;
-    }
-    
-    .contact{
-        text-align: center;
-    
-        padding-top: 0;
-    }
-    
-    main{
-        text-align: center;
-
-        padding: 5.8% 5% 5% 5%;
-    }
-    
-    .ComoComprar{
-        line-height: 2em;
-    
-        text-align: left;
-
-        padding: 0;
-    }
-    
-    .field{
-        width: 90%;
-        padding: 0.7em;
-    }
-    
-    .SubmitButton{
-        width: 90%;
-        padding: 0.5em;
-        background-color: black;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        text-transform: uppercase;
-    }
-    
-    .message{
+        font-weight: bold; }
+    footer .instagram {
+      padding: 1.2%; }
+    footer div p {
+      padding-bottom: 0%; }
+  .FeaturedProducts {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; }
+    .FeaturedProducts a {
+      color: black;
+      font-weight: bold; }
+  .contact {
+    text-align: center;
+    padding-top: 0; }
+    .contact .ContactForm {
+      padding: 0; }
+      .contact .ContactForm div .message {
         resize: none;
         padding: 2em;
-        width: 90%;
-    }
-    
-    .TitlePages{
-        padding-bottom: 1%;
-    }
-
-    .proyectos img{
-    height: 500px;
-    width: 500px;
-    }
-
-    .gradiente{
-        padding: 20px;
-
-        background-color: black;
-
-        color: white;
-
-        background-image: radial-gradient(black, white);
-
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .gradiente :hover{
-        padding: 80px;
-
-        background-color: black;
-
-        color: white;
-
-        background-image: radial-gradient(black, white);
-
-        font-family: Arial, Helvetica, sans-serif;
-
-        transition: all 300ms;
-    }
-
-    .gradiente h1{
-        color: white;
-    }
-
-    .fadein img{
-        animation-delay: 150ms;
-    }
-
-    .texto p{
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        background-color: black;
-        padding: 10px;
-        font-weight: bold;
-        font-size: medium;
-        width: 100%;
-        animation-delay: 2s;
-    }
-
-    .instagram{
-        padding: 1.2%;
-    }
-}
+        width: 90%; }
+  main {
+    text-align: center;
+    padding: 5.8% 5% 5% 5%; }
+    main .TitlePages {
+      font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+      font-size: 1em;
+      padding-bottom: 1%; }
+    main .ComoComprar {
+      line-height: 2em;
+      text-align: left;
+      padding: 0; }
+    main .proyectos img {
+      height: 500px;
+      width: 500px; }
+    main .ProductsPage {
+      column-count: 3;
+      align-items: center; }
+    main .CreateAccount {
+      text-align: center; }
+    main .login {
+      text-align: center; }
+  .field {
+    width: 90%;
+    padding: 0.7em; }
+  .SubmitButton {
+    width: 90%;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase; } }

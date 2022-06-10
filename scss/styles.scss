@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.MainPage {
+    background-color: black;
+}
+
+video {
+    width: 100vw;
+
+    height: 100vh;
+
+    position: absolute;
+
+    z-index: -1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto auto auto;
+    grid-template-areas: "header"
+        "section"
+        "footer";
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+}
+
+.MainHeader {
+    text-align: center;
+
+    .MainMenu {
+        a {
+            h1 {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.7em;
+                text-align: center;
+                padding: 3%;
+                font-weight: bold;
+            }
+        }
+
+        nav {
+            .ListMenu {
+                li {
+                    display: inline;
+                    padding: 0 1% 0 1%;
+
+                    a {
+                        color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: small;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .account {
+        a {
+            color: rgba(255, 255, 255, 0.589);
+            text-decoration: none;
+            font-size: x-small;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 1.7% 0;
+        }
+    }
+}
+
+.SecondHeader {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 1.5%;
+    align-items: center;
+
+    .SecondMenu {
+        a {
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.7em;
+                padding-bottom: 3%;
+                font-weight: bold;
+            }
+        }
+
+        nav {
+            .SecondListMenu {
+                li {
+                    display: inline;
+                    padding: 0 1% 0 1%;
+
+                    a {
+                        color: black;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: small;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .SecondAccount {
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: x-small;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 1.7% 0;
+        }
+    }
+}
+
+footer {
+    font-size: small;
+    background-color: white;
+    padding-top: 6%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .newsletter {
+        padding-top: 3%;
+        padding-bottom: 4%;
+        font-weight: bold;
+
+        .control {
+            padding: 1.1%;
+        }
+
+        .button {
+            color: white;
+            background-color: black;
+            padding: 0.7em;
+            border: none;
+            font-size: 90%;
+        }
+    }
+
+    .copyright {
+        span {
+            p {
+                color: rgba(0, 0, 0, 0.623);
+                padding-top: 3%;
+                font-size: 0.9em;
+
+                a {
+                    color: rgba(0, 0, 0, 0.63);
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    div {
+        p {
+            padding-bottom: 3%;
+        }
+    }
+}
+
+.FeaturedProducts {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.contact {
+    text-align: center;
+
+    padding: 4%;
+
+    .ContactForm {
+        padding: 0;
+
+        div {
+            .message {
+                resize: none;
+                padding: 6%;
+                width: 90%;
+            }
+        }
+    }
+}
+
+article {
+    .item {
+        color: black;
+
+        .titulo {
+            font-size: 0.9em;
+        }
+    }
+
+    .precio {
+        padding-top: 1%;
+        font-size: 0.9em;
+    }
+}
+
+main {
+    text-align: center;
+    padding: 5%;
+
+    .content {
+        padding-top: 3%;
+    }
+}
+
+.ProductsPage {
+    column-count: 1;
+    padding: 0;
+    align-items: center;
+}
+
+.TitlePages {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding-bottom: 5%;
+}
+
+.CreateAccount {
+    text-align: center;
+    padding: 4%;
+}
+
+.login {
+    text-align: center;
+    padding: 4%;
+}
+
+.ComoComprar {
+    padding: 0 2% 0 2%;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.field {
+    width: 90%;
+    padding: 1.5%;
+}
+
+.SubmitButton {
+    width: 90%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    border: 0.5em solid black;
+}
+
+.slidetop {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+@media screen and (min-width: 890px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100vh auto auto;
+        grid-template-areas: "header"
+            "section"
+            "footer";
+        box-sizing: border-box;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 24% auto;
+        grid-template-rows: 100vh auto auto;
+        grid-template-areas: "header main"
+            "header main"
+            "footer footer";
+        box-sizing: border-box;
+    }
+
+    header {
+        grid-area: header;
+
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    .MainHeader {
+        position: relative;
+        flex-direction: column;
+        top: 2.8%;
+        right: 37%;
+
+        .MainMenu {
+            a {
+                h1 {
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+            }
+
+            nav {
+                .ListMenu {
+                    li {
+                        padding-bottom: 2%;
+                        display: list-item;
+
+                        a {
+                            color: white;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: small;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: rgba(255, 255, 255, 0.664);
+                                transition: 250ms;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .account {
+            a {
+                color: rgba(255, 255, 255, 0.589);
+                text-decoration: none;
+                font-size: x-small;
+                font-family: Arial, Helvetica, sans-serif;
+                position: relative;
+                display: inline-block;
+                padding: 0 0.7% 0;
+
+                &:hover {
+                    color: white;
+                    transition: 250ms;
+                }
+            }
+        }
+    }
+
+    .SecondHeader {
+        top: 8.6%;
+        left: 3.2%;
+        position: fixed;
+        width: auto;
+
+        .SecondMenu {
+            a {
+                h1 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 2em;
+                    padding-bottom: 10%;
+                    font-weight: bold;
+                }
+            }
+
+            nav {
+                .SecondListMenu {
+                    li {
+                        padding: 5% 0 5% 0;
+                        display: list-item;
+
+                        a {
+                            color: black;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: small;
+                            font-weight: bold;
+
+                            &:hover {
+                                color: rgba(0, 0, 0, 0.473);
+                                transition: 250ms;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .SecondAccount {
+            padding-top: 3%;
+
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: x-small;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0 3% 0;
+
+                &:hover {
+                    color: rgba(128, 128, 128, 0.884);
+                    transition: 250ms;
+                }
+            }
+        }
+    }
+
+    footer {
+        font-size: 0.9em;
+        background-color: white;
+        padding-top: 0;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+        .newsletter {
+            padding-top: 1%;
+            padding-bottom: 1%;
+
+            .control {
+                padding: 8px;
+            }
+
+            .button {
+                color: white;
+                background-color: black;
+                padding: 0.4%;
+                border: 0.2em solid black;
+                font-size: small;
+            }
+        }
+
+        .copyright {
+            span {
+                p {
+                    color: rgba(0, 0, 0, 0.623);
+                    font-size: 0.8em;
+                    padding-top: 0;
+                    padding-bottom: 1%;
+
+                    a {
+                        color: rgba(0, 0, 0, 0.623);
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .instagram {
+            padding: 1.2%;
+        }
+
+        div {
+            p {
+                padding-bottom: 0%;
+            }
+        }
+    }
+
+    .FeaturedProducts {
+        background-color: white;
+        text-align: center;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        a {
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    .contact {
+        text-align: center;
+        padding-top: 0;
+
+        .ContactForm {
+            padding: 0;
+
+            div {
+                .message {
+                    resize: none;
+                    padding: 2em;
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    main {
+        text-align: center;
+        padding: 5.8% 5% 5% 5%;
+
+        .TitlePages {
+            font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+            font-size: 1em;
+            padding-bottom: 1%;
+        }
+    
+        .ComoComprar {
+            line-height: 2em;
+            text-align: left;
+            padding: 0;
+        }
+    
+        .proyectos img {
+            height: 500px;
+            width: 500px;
+        }
+    
+        .ProductsPage {
+            column-count: 3;
+            align-items: center;
+        }
+    
+        .CreateAccount {
+            text-align: center;
+        }
+    
+        .login {
+            text-align: center;
+        }
+    }
+
+    .field {
+        width: 90%;
+        padding: 0.7em;
+    }
+
+    .SubmitButton {
+        width: 90%;
+        padding: 0.5em;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+}
