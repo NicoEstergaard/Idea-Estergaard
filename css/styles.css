@@ -10,7 +10,7 @@ body {
   background-color: black; }
 
 video {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   position: absolute;
   z-index: -1; }
@@ -156,7 +156,7 @@ h1 {
     padding: 0 1% 0 1%; }
     @media (min-width: 890px) {
       .SecondHeader .SecondMenu nav .SecondListMenu li {
-        padding: 5% 0 5% 0;
+        padding: 5.2% 0 5.2% 0;
         display: list-item; } }
     .SecondHeader .SecondMenu nav .SecondListMenu li a {
       color: black;
@@ -184,10 +184,13 @@ h1 {
         text-decoration: none;
         font-size: x-small;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 0 3% 0; }
+        padding: 0 3% 0 3%; }
         .SecondHeader .SecondAccount a:hover {
           color: grey;
           transition: 250ms; } }
+  @media (min-width: 890px) {
+    .SecondHeader .SecondAccount {
+      padding-top: 5.2%; } }
 
 footer {
   font-size: small;
@@ -322,8 +325,10 @@ main {
 
 .ComoComprar {
   padding: 0 2% 0 2%;
-  line-height: 1.5rem;
-  text-align: left; }
+  text-align: left;
+  line-height: 2rem; }
+  .ComoComprar ul {
+    font-family: Arial, Helvetica, sans-serif; }
   @media (min-width: 890px) {
     .ComoComprar {
       line-height: 2em;
